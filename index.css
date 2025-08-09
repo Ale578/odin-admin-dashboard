@@ -12,6 +12,14 @@ h1 {
     font-size:x-large
 }
 
+h2 {
+    font-size: large;
+}
+
+h3 {
+    font-size: medium;
+}
+
 
 #page {
     display: grid;
@@ -92,7 +100,7 @@ h1 {
 }
 
 #main-content {
-    background-color: blueviolet;
+    background-color: rgb(225, 234, 247);
     grid-area: main-content;
     height: 100%;
     display: grid;
