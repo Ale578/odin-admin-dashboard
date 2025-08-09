@@ -3,7 +3,7 @@ body, html {
     height: 100;
 }
 
-#page        {
+#page {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
@@ -14,9 +14,35 @@ body, html {
 }
 
 #header {
-    background-color: antiquewhite;    
     grid-area: header;
     height: 100%;
+}
+
+#searchBar {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 5px;
+    grid-template-columns: auto 3fr 1fr auto auto auto;
+    padding: 0 15px;
+}
+
+#searchBar button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;   
+    background-color: white;
+}
+
+#searchBar input {
+     height: 25px;
+     border-radius: 15px;
+     border: none;
+     background-color:rgb(225, 234, 247);
+     width: 100%;
 }
 
 #sidebar {
@@ -41,7 +67,7 @@ body, html {
     grid-area: projects;
 }
 
-#projects {
+#projectCards {
     display: grid;
     grid-template-columns: 1fr 1fr
 }
